@@ -10,7 +10,7 @@ $(document).ready(function(){
     
 /*----------Scroll------*/
     
-    $('#movsel').change(function () {
+$('#movsel').change(function () {
 var otherValue=$(this).find('option:selected').attr('data-othervalue');
 var someOtherValue=$(this).find('option:selected').attr('data-someothervalue');
 $('#insel').val(otherValue);
@@ -120,9 +120,6 @@ sr.reveal('#foo-id', { duration: 2000,
                                     js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
                                     fjs.parentNode.insertBefore(js, fjs);
                                 }(document, 'script', 'facebook-jssdk'));
-    
-    
-    
     
     
 });
