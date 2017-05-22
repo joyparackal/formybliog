@@ -88,8 +88,8 @@ sr.reveal('#foo-id', { duration: 2000,
     p_oEvent.preventDefault();
     sMovie = $Form.find('input').val();
          
-    sUrl = ' http://www.omdbapi.com/?i=tt3896198&apikey=c0a0b138&' + sMovie + '&type=movie&tomatoes=true' + '&plot=full'
-        
+   
+    sUrl = 'https://www.omdbapi.com/?t=' + sMovie + '&type=movie&tomatoes=true' + '&plot=full'  
     $.ajax(sUrl, {
     complete: function (p_oXHR, p_sStatus) {
                 oData = $.parseJSON(p_oXHR.responseText);
